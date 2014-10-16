@@ -1,0 +1,150 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+.col-md-4 {
+	width: 25%;
+}
+.col-md-4.graph {
+	width: 75%;
+}
+
+.jumbotron {
+	background-color: #fff;
+	padding-top: 10px;
+}
+
+
+
+.jumbotron p {
+	padding: 2em;
+	text-align: center;
+	font-size: 18px;
+
+}
+
+/* =========================================================================
+   Header
+   ========================================================================== */
+
+.navbar-header {
+	background-color: #6699cc;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	z-index: 31;
+}
+
+.leaderboard {
+	display: block;
+	text-align: center;
+	margin-top: 5rem;
+}
+
+.wrapper-clearfix .navbar-brand {
+	float: left;
+	margin: 0.5rem;
+	font-family: 'Whitney SSm A', 'Whitney SSm B';
+	font-weight: 700;
+	font-style: normal;
+	font-size: 3rem;
+	line-height: 2rem;
+	color: #FFFFFF;
+	padding-left: 3em;
+
+}
+
+.spec-logo {
+	float: right;
+	height: 4rem;
+	width: auto;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
+	left: 0;
+	z-index: 32;
+	margin-right: 7%;
+}
+
+/* ==========================================================================
+   Body
+   ========================================================================== */
+
+p {
+	font-family: 'Whitney SSm A', 'Whitney SSm B'; 
+	font-weight: 400; 
+	font-style: normal;
+}
+
+h2 {
+	font-family: 'Whitney SSm A', 'Whitney SSm B'; 
+	font-weight: 600; 
+	font-style: normal;
+}
+
+iframe {
+	display: block;
+	text-align: center;
+
+}
+
+.container .box-ad .col-md-4 {
+	text-align: center;
+	padding-bottom: 5rem;
+}
+
+.package-graphic {
+width:100%;
+}
+
+.addthis_sharing_toolbox {
+	float:left;
+	margin-top:0.5rem;
+	display:block;
+}
+
+@media only screen and (max-width: 979px) {
+	.addthis_sharing_toolbox {
+		display:none;
+	}
+}
+
+.clearfix {
+margin: 2em 0;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+	padding-left: 3em;
+}
+
+
+.nvd3 .nv-groups .nv-point {
+    stroke-opacity: 1 !important;
+    stroke-width: 5px;
+}
+
+.nvd3 .nv-axis .nv-axisMaxMin text {
+font-weight: bold;
+font-family: Whitney HTF;
+}
+
+svg text {
+font: normal 12px Whitney HTF;
+text-transform: uppercase;
+}
+
+
+
+
+
+
+
+

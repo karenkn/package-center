@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+
+        <!-- Metadata -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Package Center Data Visualization | Columbia Daily Spectator</title>
+        <meta name="description" content="Data and graphs detailing the monthly and yearly traffic at the Columbia University Package Center.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- FACEBOOK OPEN GRAPH TAGS -->
+        <meta property="og:title" content="Package Center Data Visualization" />
+        <meta property="og:site_name" content="Columbia Daily Spectator" />
+        <meta property="og:url" content="http://www.columbiaspectator.com/features/package-center-data-visualization/" /> <!-- input actual filepath -->
+        <meta property="og:description" content="Data and graphs detailing the month to month traffic at the Columbia University Package Center." />
+        <meta property="og:image" content="http://columbiaspectator.com/sites/default/files/116_trad_graphic.jpg" /> <!-- change graphic filepath -->
+        <meta property="fb:app_id" content="799523286766152" />
+        <meta property="og:type" content="article" />
+        <meta property="article:author" content="https://www.facebook.com/columbiaspectator" />
+        <meta property="article:publisher" content="https://www.facebook.com/columbiaspectator" />
+        
+        <!-- TWITTER CARD META TAGS -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@ColumbiaSpec">
+        <meta name="twitter:creator" content="@ColumbiaSpec">
+        <meta name="twitter:title" content="Package Center Data Visualization">
+        <meta name="twitter:description" content="Data and graphs detailing the month to month traffic at the Columbia University Package Center.">
+        <meta name="twitter:url" content="http://www.columbiaspectator.com/features/package-center-data-visualization/" /> <!-- input actual filepath -->
+        <meta name="twitter:image:src" content="http://columbiaspectator.com/sites/default/files/116_trad_graphic.jpg"> <!-- change graphic filepath -->
+        <meta name="dcterms.format" content="text/html" />
+        <link rel="shortcut icon" href="http://columbiaspectator.com/sites/default/files/crown_48.ico" type="image/vnd.microsoft.icon" />
+
+        <!-- Stylesheets -->
+
+        <link href="src/nv.d3.css" rel="stylesheet" type="text/css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+                overflow-y:scroll;
+            }
+            text {
+                font: 12px sans-serif;
+            }
+
+            svg {
+                display: block;
+            }
+
+            #chart1 svg {
+                /*height: 500px;*/
+                min-width: 500px;
+                min-height: 300px;
+            }
+            #chart3 svg {
+                /*height: 500px;*/
+                min-width: 500px;
+                min-height: 300px;
+            }
+            #chart1 {
+
+            }
+
+
+        </style>
+        <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7429872/799144/css/fonts.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7429872/718186/css/fonts.css" />
+
+        <!-- Javascript -->
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        
+        <!-- Google Analytics code -->
+        <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-3441642-2', 'columbiaspectator.com');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+        </script>
+
+        <!--Ad code-->
+        <script type="text/javascript" src="http://ox-d.oncampusweb.com/w/1.0/jstag"></script>
+        <script type="text/javascript">
+            var OX_d531479494 = OX();
+            OX_d531479494.addPage("536870958");
+            OX_d531479494.fetchAds();
+        </script>
+
+      </head>
+
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+      <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <header class="wrapper-clearfix">
+              <h1 class="navbar-brand" >Package Center Data Visualization</h1>
+              <a href="http://www.columbiaspectator.com">
+                <img src="img/masthead_copy.png" class="spec-logo">
+              </a>
+
+              <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              </button> -->
+              
+
+                <!-- <div id="facebookButton" class="btn btn-success clearfix">Share Dialoge</div> -->
+
+            </header>
+              
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Leaderboard Banner Ad -->
+      <div class="leaderboard">
+        <!-- OpenX body script -->
+        <script type="text/javascript">
+        OX_d531479494.showAdUnit("536881370");
+        </script><noscript><iframe id="d531479494" name="d531479494" src="http://ox-d.oncampusweb.com/w/1.0/afr?auid=536881370&cb=<?php echo mt_rand(1,999999);?>" frameBorder="0" frameSpacing="0" scrolling="no" width="728" height="90"><a href="http://ox-d.oncampusweb.com/w/1.0/rc?cs=d531479494&cb=<?php echo mt_rand(1,999999);?>"><img src="http://ox-d.oncampusweb.com/w/1.0/ai?auid=536881370&cs=d531479494&cb=<?php echo mt_rand(1,999999);?>" border="0" alt=""></a></iframe></noscript>
+      </div>
+
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget dictum arcu, et bibendum ante. Vestibulum libero nunc, tincidunt at lectus vitae, viverra ullamcorper eros. Suspendisse at ante eros. Phasellus et commodo tellus. Curabitur eros risus, faucibus vitae scelerisque a, sollicitudin ut nulla. Sed pulvinar in enim a tempus. Mauris ac vestibulum neque. Integer aliquam eget orci at lacinia. Suspendisse faucibus lectus at sodales vestibulum. Phasellus consectetur hendrerit porttitor. Aliquam condimentum, elit sit amet condimentum egestas, sem leo rhoncus neque, quis porttitor erat ligula a purus. Suspendisse nunc neque, malesuada quis sagittis at, fermentum sed odio. Phasellus pharetra volutpat suscipit.</p>
+        
+        <div class="video">
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='http://www.youtube.com/embed/ITRUdkg3Zts' frameborder='0' allowfullscreen></iframe></div>        </div>
+
+ 
+
+          <!-- Box Ads -->
+      <div class="row-3 clearfix">
+        <div class="box-ad">
+          <div class="col-md-4">
+            <!-- OpenX body script -->
+            <script type="text/javascript">
+            OX_d531479494.showAdUnit("536881371");
+            </script><noscript><iframe id="d531479494" name="d531479494" src="http://ox-d.oncampusweb.com/w/1.0/afr?auid=536881371&cb=<?php echo mt_rand(1,999999);?>" frameBorder="0" frameSpacing="0" scrolling="no" width="300" height="250"><a href="http://ox-d.oncampusweb.com/w/1.0/rc?cs=d531479494&cb=<?php echo mt_rand(1,999999);?>"><img src="http://ox-d.oncampusweb.com/w/1.0/ai?auid=536881371&cs=d531479494&cb=<?php echo mt_rand(1,999999);?>" border="0" alt=""></a></iframe></noscript>
+          </div>
+
+          <div class="col-md-4">
+            <!-- OpenX body script -->
+            <script type="text/javascript">
+            OX_d531479494.showAdUnit("536881372");
+            </script><noscript><iframe id="d531479494" name="d531479494" src="http://ox-d.oncampusweb.com/w/1.0/afr?auid=536881372&cb=<?php echo mt_rand(1,999999);?>" frameBorder="0" frameSpacing="0" scrolling="no" width="300" height="250"><a href="http://ox-d.oncampusweb.com/w/1.0/rc?cs=d531479494&cb=<?php echo mt_rand(1,999999);?>"><img src="http://ox-d.oncampusweb.com/w/1.0/ai?auid=536881372&cs=d531479494&cb=<?php echo mt_rand(1,999999);?>" border="0" alt=""></a></iframe></noscript>
+          </div>
+        </div>
+      </div>
+   </div>
+       </div>
+          <div class="container">
+
+
+            <div class="row-2 clearfix">
+        <div class="col-md-4 graph">
+        <div class="graphic">
+          <img src="img/puppy_filler_image.jpg" class="package-graphic">
+        </div>
+        </div>
+        <div class="col-md-4">  
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        </div>  
+      </div>
+
+
+
+    <!-- Main Content Layout -->
+
+       
+
+      
+      <div class="row-3 clearfix">
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
+        <div class="col-md-4 graph">
+        <div id="chart3" >
+               <svg id="chart3" style="width:110%; height:500px;"></svg>
+            </div>
+        </div>
+      </div> 
+    <div class="row-4 clearfix">
+        <div class="col-md-4 graph">
+            <div id="chart2" >
+               <svg id="chart2" style="width:100%; height:500px;"></svg>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        </div>
+
+      </div> 
+
+      <div class="row-1 clearfix">
+          <div class="col-md-4">
+          <h2>Heading</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        </div>
+        <div class="col-md-4 graph">
+            <div id="chart1" >
+               <svg id="chartblah" style="width:110%; height:500px;"></svg>
+            </div>
+        </div>
+
+      </div>   
+        
+    </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; 2014 Spectator Publishing Company</p>
+      </footer>
+
+    </div> <!-- /container -->        
+
+    <script src="lib/d3.v3.js"></script>
+    <script src="nv.d3.js"></script>
+    <script src="src/tooltip.js"></script>
+    <script src="src/utils.js"></script>
+    <script src="src/interactiveLayer.js"></script>
+    <script src="src/models/legend.js"></script>
+    <script src="src/models/axis.js"></script>
+    <script src="src/models/scatter.js"></script>
+    <script src="src/models/line.js"></script>
+    <script src="src/models/lineChart.js"></script>
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+    <script src="chart3.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        
+    </body>
+</html>
