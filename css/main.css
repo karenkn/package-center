@@ -12,7 +12,15 @@
 .col-md-4.graph {
 	width: 75%;
 }
-
+.container .box-ad .col-md-4 {
+text-align: center;
+width: 300px;
+padding: 0;
+margin-right: 1em;
+}
+.box-ad img{
+	width:100%;
+}
 .jumbotron {
 	background-color: #fff;
 	padding-top: 10px;
@@ -21,10 +29,9 @@
 
 
 .jumbotron p {
-	padding: 2em;
-	text-align: center;
-	font-size: 18px;
-
+/* padding: 2em; */
+text-align: left;
+font-size: 18px;
 }
 
 /* =========================================================================
@@ -94,7 +101,6 @@ iframe {
 
 .container .box-ad .col-md-4 {
 	text-align: center;
-	padding-bottom: 5rem;
 }
 
 .package-graphic {
@@ -117,6 +123,14 @@ width:100%;
 margin: 2em 0;
 }
 
+.jumbotron{
+	margin:0;
+	padding:0;
+}
+.col-md-4{
+	padding-left:0;
+}
+.box-ad{padding-left: 23%;}
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -145,7 +159,18 @@ body {
 font-family: Whitney HTF;
 }
 
+.jumbotron .col-md-4.graph {
+width: 73.66%;
+}
+.row-top.clearfix {
+background-color: #efefef;
+padding: 1em;
+}
 
+.byline {
+margin-top: 20px;
+margin-bottom: 10px;
+}
 
 
 

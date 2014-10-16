@@ -26,7 +26,7 @@
         ;   
 
       new_chart.yAxis
-        .axisLabel('Package Receivables-Peak Period')
+        .axisLabel('Package Received-Rush Period')
         .tickFormat(d3.format(',f'))
         ;
 
