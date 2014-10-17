@@ -69,6 +69,13 @@ font-size: 18px;
 	left: 0;
 	z-index: 32;
 	margin-right: 7%;
+	display: none;
+}
+
+@media(min-width: 890px) {
+	.spec-logo {
+		display: block;
+	}
 }
 
 /* ==========================================================================
