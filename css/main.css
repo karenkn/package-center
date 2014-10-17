@@ -6,12 +6,6 @@
    Layout
    ========================================================================== */
 
-.col-md-4 {
-	width: 25%;
-}
-.col-md-4.graph {
-	width: 75%;
-}
 .container .box-ad .col-md-4 {
 text-align: center;
 width: 300px;
