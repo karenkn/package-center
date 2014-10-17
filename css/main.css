@@ -82,7 +82,6 @@ font-size: 18px;
 @media(min-width: 890px) {
 	.spec-logo {
 		display: block;
-		float: left;
 	}
 
 	.wrapper-clearfix .navbar-brand {
