@@ -45,6 +45,11 @@ font-size: 18px;
 	display: block;
 	text-align: center;
 	margin-top: 5rem;
+	max-width: 100%;
+}
+
+.leaderboard img {
+	width: 100%;
 }
 
 .wrapper-clearfix .navbar-brand {
