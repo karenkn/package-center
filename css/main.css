@@ -50,6 +50,7 @@ font-size: 18px;
 
 .leaderboard img {
 	width: 100%;
+	height: auto;
 }
 
 .wrapper-clearfix .navbar-brand {
