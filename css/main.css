@@ -63,12 +63,10 @@ font-size: 18px;
 	font-size: 3rem;
 	line-height: 2rem;
 	color: #FFFFFF;
-	padding-left: 3em;
-
 }
 
 .spec-logo {
-	float: none;
+	float: right;
 	height: 4rem;
 	width: auto;
 	margin-top: 1rem;
@@ -86,6 +84,7 @@ font-size: 18px;
 
 	.wrapper-clearfix .navbar-brand {
 		float: left;
+		padding-left: 3em;
 	}
 }
 
