@@ -26,7 +26,7 @@
         ;   
 
       new_chart.yAxis
-        .axisLabel('Package Received-Rush Period')
+        .axisLabel('Packages Received (August and September)')
         .tickFormat(d3.format(',f'))
         ;
 

@@ -147,16 +147,16 @@ footer {
 
 .nvd3 .nv-axis .nv-axisMaxMin text {
 font-weight: bold;
-font-family: Whitney HTF;
+font-family: 'Whitney SSm A';
 }
 
 svg text {
-font: normal 12px Whitney HTF;
+font: normal 12px 'Whitney SSm A';
 text-transform: uppercase;
 }
 
 body {
-font-family: Whitney HTF;
+font-family: 'Whitney SSm A';
 }
 
 .jumbotron .col-md-4.graph {
