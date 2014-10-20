@@ -10,8 +10,7 @@ nv.addGraph(function() {
       .groupSpacing(0.1)
       .stacked(false)
       .showControls(false)
-      .margin({left: 100}) ;
-      ;
+      .margin({left: 100});
 
     chart.multibar
       .hideable(true);
@@ -23,11 +22,10 @@ nv.addGraph(function() {
         .tickFormat(function(d){
           return days[d-1]
         })
-        .axisLabel("Day of the Week")
-        //.showMaxMin(true)
+        .axisLabel("Date")
 
     chart.yAxis
-        .tickFormat(d3.format(',.1f'))
+        .tickFormat(d3.format('d'))
         .axisLabel("Number of packages picked up");
 
     var data = [
@@ -46,7 +44,7 @@ nv.addGraph(function() {
           {x:8,y:0, color:"#8dd4ff"},
           {x:9,y:0, color:"#8dd4ff"},
           //9/2
-          {x:10,y:1217, color:"#00a83e"},
+          {x:10,y:1217, color:"#00f45b"},
           {x:11,y:807, color:"#8dd4ff"},
           {x:12,y:973, color:"#8dd4ff"},
           {x:13,y:1080, color:"#8dd4ff"},

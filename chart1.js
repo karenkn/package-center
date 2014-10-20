@@ -10,7 +10,7 @@
         showYAxis: true,
         transitionDuration: 250
       })
-      .forceY([0,40000])
+      .forceY([0,35000])
       ;
 
       // chart sub-models (ie. xAxis, yAxis, etc) when accessed directly, return themselves, not the parent chart, so need to chain separately
