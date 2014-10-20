@@ -26,7 +26,7 @@
         ;   
 
       chart.yAxis
-        .axisLabel('Accountable Pieces Received')
+        .axisLabel('Packages Received')
         .tickFormat(d3.format(',f'))
         ;
 

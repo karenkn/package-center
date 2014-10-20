@@ -16,17 +16,18 @@ nv.addGraph(function() {
     chart.multibar
       .hideable(true);
 
-    chart.reduceXTicks(true).staggerLabels(false);
+    chart.reduceXTicks(false).staggerLabels(false);
 
-    var days = ["8/24","8/25","8/26","8/27","8/28","8/29","8/30","8/31","9/1","9/2","9/3","9/4","9/5","9/6","9/7","9/8","9/9","9/10","9/11","9/12","9/13","9/14","9/15","9/16","9/17","9/18","9/19","9/20","9/21","9/22","9/23","9/24","9/25","9/26","9/27"]
+    var days = ["Sat, 8/24","Sun, 8/25","Mon, 8/26","Tues, 8/27","Wed, 8/28","Thurs, 8/29","Fri, 8/30","Sat, 8/31","Sun, 9/1","Mon, 9/2","Tues, 9/3","Wed, 9/4","Thurs, 9/5","Fri, 9/6","Sat, 9/7","Sun, 9/8","Mon, 9/9","Tues, 9/10","Wed, 9/11","Thurs, 9/12","Fri, 9/13","Sat, 9/14","Sun, 9/15","Mon, 9/16","Tues, 9/17","Wed, 9/18","Thurs, 9/19","Fri, 9/20","Sat, 9/21","Sun, 9/22","Mon, 9/23","Tues, 9/24","Wed, 9/25","Thurs, 9/26","Fri, 9/27"]
     chart.xAxis
+        .tickValues([3,11,17,24,31])
         .tickFormat(function(d){
           return days[d-1]
         })
-        .axisLabel("Date")
+        .axisLabel("Date");
 
     chart.yAxis
-        .tickFormat(d3.format('d'))
+        .tickFormat(d3.format(',.0f'))
         .axisLabel("Number of packages picked up");
 
     var data = [

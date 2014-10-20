@@ -179,8 +179,25 @@ padding: 1em;
 }
 
 .byline {
-margin-top: 20px;
-margin-bottom: 10px;
+margin-top: 1.5rem;
+margin-bottom: 2rem;
+text-align: center;
+}
+
+.media-flex {
+   position: relative;
+   height: 40rem;
+   width: 100%;
+   max-width: 60rem;
+}
+
+.media-flex .gfyitem > div,
+.media-flex .gfyitem .gfyPreLoadCanvas,
+.media-flex .gfyitem .gfyVid,
+.media-flex .gfyitem  .gfyGif {
+    position: absolute !important;
+    top: 0; right: 0; bottom: 0; left: 0;
+    width: 100% !important;
 }
 
 

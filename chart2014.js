@@ -25,7 +25,7 @@ nv.addGraph(function() {
         .axisLabel("Date")
 
     chart.yAxis
-        .tickFormat(d3.format('d'))
+        .tickFormat(d3.format(',.0f'))
         .axisLabel("Number of packages picked up");
 
     var data = [
