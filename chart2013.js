@@ -23,11 +23,10 @@ nv.addGraph(function() {
         .tickFormat(function(d){
           return days[d-1]
         })
-        .axisLabel("Day of the Week")
-        //.showMaxMin(true)
+        .axisLabel("Date")
 
     chart.yAxis
-        .tickFormat(d3.format(',.1f'))
+        .tickFormat(d3.format('d'))
         .axisLabel("Number of packages picked up");
 
     var data = [
