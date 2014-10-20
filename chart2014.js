@@ -15,10 +15,11 @@ nv.addGraph(function() {
     chart.multibar
       .hideable(true);
 
-    chart.reduceXTicks(true).staggerLabels(false);
+    chart.reduceXTicks(false).staggerLabels(false);
 
-    var days = ["8/24","8/25","8/26","8/27","8/28","8/29","8/30","8/31","9/1","9/2","9/3","9/4","9/5","9/6","9/7","9/8","9/9","9/10","9/11","9/12","9/13","9/14","9/15","9/16","9/17","9/18","9/19","9/20","9/21","9/22","9/23","9/24","9/25","9/26","9/27"]
+    var days = ["Sun, 8/24","Mon, 8/25","Tues, 8/26","Wed, 8/27","Thurs, 8/28","Fri, 8/29","Sat, 8/30","Sun, 8/31","Mon, 9/1","Tues, 9/2","Wed, 9/3","Thurs, 9/4","Fri, 9/5","Sat, 9/6","Sun, 9/7","Mon, 9/8","Tues, 9/9","Wed, 9/10","Thurs, 9/11","Fri, 9/12","Sat, 9/13","Sun, 9/14","Mon, 9/15","Tues, 9/16","Wed, 9/17","Thurs, 9/18","Fri, 9/19","Sat, 9/20","Sun, 9/21","Mon, 9/22","Tues, 9/23","Wed, 9/24","Thurs, 9/25","Fri, 9/26","Sat, 9/27"]
     chart.xAxis
+        .tickValues([2,10,16,23,30])
         .tickFormat(function(d){
           return days[d-1]
         })
