@@ -29,7 +29,7 @@
         .axisLabel('Packages Received (August and September)')
         .tickFormat(d3.format(',f'))
         ;
-
+      
       d3.select('#chart3 svg')
         .datum(packageData())
         .call(new_chart);

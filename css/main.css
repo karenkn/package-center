@@ -94,6 +94,7 @@ font-size: 1.5rem;
 }
 
 @media(min-width: 890px) {
+
 	.spec-logo {
 		display: block;
 	}
@@ -155,6 +156,9 @@ width:100%;
 	margin-top:0.5rem;
 	display:block;
 }
+#chart2014-mobile, #chart3-mobile, #chart2013-mobile, #chart1-mobile{
+		display:none;
+	}
 
 @media only screen and (max-width: 979px) {
 	.addthis_sharing_toolbox {
@@ -177,6 +181,19 @@ margin: 2em 0;
 	display:block;
 	margin-right: auto;
 	margin-left: auto;
+}
+
+@media all and (max-width: 500px){
+	#chart2014-mobile, #chart3-mobile, #chart2013-mobile, #chart1-mobile{
+		display:inherit;
+	}
+	#chart2014-mobile img, #chart3-mobile img, #chart2013-mobile img, #chart1-mobile img{
+		width:100%;
+	}
+	#chart2014, #chart3, #chart2013, #chart1{
+		display:none;
+	}
+
 }
 /* ==========================================================================
    Footer
@@ -235,6 +252,12 @@ text-align: center;
     top: 0; right: 0; bottom: 0; left: 0;
     width: 100% !important;
 }
-
-
+.row{
+	margin:0;
+}
+@media all and (max-width:890px){
+svg {
+width: 100% !important;
+}
+}
 
